@@ -1,0 +1,4 @@
+The Mod_Fixes portion of the Clangeddin’s Collection is bugged. The clangfix_equip script is NOT actually being fired by the x2_mod_def_equ and x2_mod_def_unequ scripts provided by the fix. A “concealed” icon also incorrectly shows next to your character in the party bar if you equip a shield.
+Upon troubleshooting this in the toolset, I discovered that the x2_mod_def_equ and x2_mod_def_unequ scripts in the Mod_Fixes folder simply needed to be recompiled. After applying the fixed scripts, the clangfix_equip script is now working as advertised. Additionally, the sneak attack immunity icon now properly shows.
+Note: This fix is savegame compatible. However, BEFORE applying this fix, load your savegame and unequip all shields. Then make a new save. Failing to do this will cause the “concealed” icon to permanently show next to your character in the party bar.
+Needs confirmation.
